@@ -27,7 +27,20 @@
 - **Problem**: Identify seasonal patterns and improve customer retention strategies
 
 ### 7. **Predicting_Sales_from_Campaign_Data.ipynb**
-- **Steps**: Clean messy data → Handle missing values → Feature engineering → Train model
-- **Problem**: Predict sales from campaign metrics with dirty, mixed-type data
+- **Steps**: Load data → Clean data types → Handle missing values → Outlier detection → Feature engineering → Train RandomForestRegressor → Predict sales
+- **Problem**: Predict sales units from campaign data with messy, mixed-type features (currency symbols, percentages, missing values)
+- **Key Features**:
+  - Data cleaning: Remove currency symbols (£) and percentages (%)
+  - Missing value imputation using median for numerical columns
+  - Outlier detection using IQR method (identifies 2-3% outliers)
+  - Feature engineering: Extract temporal features (Year, Month, DayOfWeek, Hour, IsWeekend)
+  - Data preprocessing with StandardScaler and OneHotEncoder pipelines
+  - RandomForestRegressor with hyperparameter tuning
+  - Model evaluation metrics: MAE, RMSE, R²-score
+- **Dataset**: 
+  - Train: 8,000 records with Sales target
+  - Test: 2,000 records without Sales (predictions only)
+  - Features: Followers, EngagementRate (%), AdSpend (GBP), ContentQuality, Timestamp, Notes
+- **Performance**: R² = 0.92 on training data
 
 ### 8. **License Plate Detection & Blurring using YOLOv8**
