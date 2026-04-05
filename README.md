@@ -1,4 +1,4 @@
-# AIMLProjects
+# AI ML Projects
 
 ## 📁 Project Files & Solutions
 
