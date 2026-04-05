@@ -29,3 +29,5 @@
 ### 7. **Predicting_Sales_from_Campaign_Data.ipynb**
 - **Steps**: Clean messy data → Handle missing values → Feature engineering → Train model
 - **Problem**: Predict sales from campaign metrics with dirty, mixed-type data
+
+### 8. **License Plate Detection & Blurring using YOLOv8**
