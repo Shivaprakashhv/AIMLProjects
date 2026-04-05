@@ -44,3 +44,19 @@
 - **Performance**: R² = 0.92 on training data
 
 ### 8. **License Plate Detection & Blurring using YOLOv8**
+- **Steps**: Load YOLOv8 model → Detect license plates in images/video → Extract detected regions → Apply Gaussian blur → Display/save results
+- **Problem**: Automatically detect and blur license plates in images/videos for privacy protection
+- **Key Features**:
+  - YOLOv8 object detection model for accurate license plate localization
+  - Preprocessing: Image normalization and resizing to model input specifications
+  - Gaussian blur filter applied to detected license plate regions
+  - Support for batch processing multiple images and video frames
+  - Confidence threshold filtering for detection quality control
+  - Bounding box visualization with confidence scores
+  - Output generation: Blurred images/videos with detected regions
+- **Dataset**: Real-world images containing vehicles with visible license plates
+- **Technology Stack**: 
+  - YOLOv8 (Ultralytics)
+  - OpenCV for image/video processing
+  - Python 3.8+
+- **Use Cases**: Privacy protection in surveillance, dataset anonymization, automated video redaction
